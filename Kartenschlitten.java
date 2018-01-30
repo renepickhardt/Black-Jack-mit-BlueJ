@@ -1,13 +1,18 @@
 import java.util.ArrayList;
 import java.util.Collections;
 /**
- * Der Kartenschlitten besteht aus 6 Kartendecks, die jeweils die Werte
- * 2,3,4,...,10, Bube, Dame, Koenig, Ass haben.
+ * Der Kartenschlitten besteht aus 6 französischen Kartendecks. Diese bestehen aus den Karten zu jeder 
+ * Farbe (karo, herz, pik, kreuz) jeweils mit den Werten zwei, drei,...,zehn, bube, dame, koenig, ass haben.
+ * Somit besteht der Kartenschlitten aus insgesamt 6 * 4 * 13 Karten. 
+ * 6 ==> Anzahl der Kartendecks
+ * 4 ==> Anzahl der möglichen Farben
+ * 13 ==> Anzahl der möglichen Werte
  * 
- * Die 6 Kartendecks werten in ArrayList Datenstruktur gespeichert. 
+ * Der Kartenschlitten kann nur mit dem Konstruktur initialisiert werden und stellt ansonsten nur die 
+ * Funktion zieheKarte() bereit. 
  * 
- * Der Kartenschlitten stellt öffentlich nur die Funktion "zieheKarte()" bereit
- * 
+ * 312 Karten werden in der ArrayList Datenstruktur gespeichert. 
+ *   
  * Um die Klasse zu verstehen könnte es sich rentieren zu verstehen, wie man ArrayLists
  * in Java verwendet. Die offizielle Dokumentation ist zu finden unter: 
  * https://docs.oracle.com/javase/7/docs/api/java/util/ArrayList.html
@@ -87,7 +92,7 @@ public class Kartenschlitten
      */
     public Karte zieheKarte(){
         
-        // Um diese Zeile zu verstehen bietet es sich an 
+        // Um diese Zeile zu verstehen bietet es sich an die Dokumentation über die Klasse ArrayList zu lesen
         return kartenStapel.remove(kartenStapel.size()-1);
     }
     

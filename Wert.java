@@ -1,6 +1,12 @@
 
 /**
- * Hier wird der Name des Kartenwertes in kleinbuchstaben abgespeichert.
+ * Hier wird der Name des Kartenwertes in Kleinbuchstaben abgespeichert.
+ * Durch den enumerated Datentyp der hier als public definiert ist können wir überall im Programm
+ * auf Wert.zwei, Wert.drei, Wert.vier,... zugreifen. 
+ * 
+ * Insbesondere funktioniert die Zuweisung:
+ * 
+ * Wert w = Wert.drei;
  * 
  * @author Rene Pickhardt (https://github.com/renepickhardt)
  * @version 0.1 
